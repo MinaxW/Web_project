@@ -1,0 +1,154 @@
+\doxysection{mg\+\_\+mgr Struct Reference}
+\hypertarget{structmg__mgr}{}\label{structmg__mgr}\index{mg\_mgr@{mg\_mgr}}
+
+
+{\ttfamily \#include $<$mongoose.\+h$>$}
+
+
+
+Collaboration diagram for mg\+\_\+mgr\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmg__mgr__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__mgr_aea4abe9c820acf0e0bbb54593cf3244b}{conns}}
+\item 
+struct \mbox{\hyperlink{structmg__dns}{mg\+\_\+dns}} \mbox{\hyperlink{structmg__mgr_a3326e4d2a9f1537ad683f85d7536bee8}{dns4}}
+\item 
+struct \mbox{\hyperlink{structmg__dns}{mg\+\_\+dns}} \mbox{\hyperlink{structmg__mgr_a746840f07c9c0b48aa55e32c4935c127}{dns6}}
+\item 
+int \mbox{\hyperlink{structmg__mgr_a6fc74db7181a32d78a598fa0d7e2b9d8}{dnstimeout}}
+\item 
+bool \mbox{\hyperlink{structmg__mgr_a85ffa7ee2ab4325250d983fb0fcd1bd5}{use\+\_\+dns6}}
+\item 
+unsigned long \mbox{\hyperlink{structmg__mgr_a5767d57547d9ca7c653596a56f0b237a}{nextid}}
+\item 
+unsigned long \mbox{\hyperlink{structmg__mgr_aff3dd81834d7be66f26c9bd29065fc82}{timerid}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__mgr_afcb027058e971d541651d6efd9a69a2b}{userdata}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__mgr_af06fbb0aecc42c741c53bbb54209f3a0}{tls\+\_\+ctx}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structmg__mgr_a1b9ebbee6362adf1d6d37016e9942246}{mqtt\+\_\+id}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__mgr_a6c6a30dc5f872bfde3a0c4fd362efbd2}{active\+\_\+dns\+\_\+requests}}
+\item 
+struct \mbox{\hyperlink{structmg__timer}{mg\+\_\+timer}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__mgr_adeba7cbcb7d4d59e1ebf5922e7e15a20}{timers}}
+\item 
+int \mbox{\hyperlink{structmg__mgr_ad4b7250d3c05391b13cc19ed4bdb820c}{epoll\+\_\+fd}}
+\item 
+struct \mbox{\hyperlink{structmg__tcpip__if}{mg\+\_\+tcpip\+\_\+if}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__mgr_a28f181d31cf9784559fa287e0dd3633d}{ifp}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structmg__mgr_a2acff58c906da8e8e699b3c5cb63dad2}{extraconnsize}}
+\item 
+\mbox{\hyperlink{mongoose_8h_a4a24d9816efa3c92abab317163116ea5}{MG\+\_\+\+SOCKET\+\_\+\+TYPE}} \mbox{\hyperlink{structmg__mgr_abf7c323e2b53221bfe447e34393603f0}{pipe}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structmg__mgr_a6c6a30dc5f872bfde3a0c4fd362efbd2}\label{structmg__mgr_a6c6a30dc5f872bfde3a0c4fd362efbd2} 
+\index{mg\_mgr@{mg\_mgr}!active\_dns\_requests@{active\_dns\_requests}}
+\index{active\_dns\_requests@{active\_dns\_requests}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{active\_dns\_requests}{active\_dns\_requests}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} mg\+\_\+mgr\+::active\+\_\+dns\+\_\+requests}
+
+\Hypertarget{structmg__mgr_aea4abe9c820acf0e0bbb54593cf3244b}\label{structmg__mgr_aea4abe9c820acf0e0bbb54593cf3244b} 
+\index{mg\_mgr@{mg\_mgr}!conns@{conns}}
+\index{conns@{conns}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{conns}{conns}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}}\texorpdfstring{$\ast$}{*} mg\+\_\+mgr\+::conns}
+
+\Hypertarget{structmg__mgr_a3326e4d2a9f1537ad683f85d7536bee8}\label{structmg__mgr_a3326e4d2a9f1537ad683f85d7536bee8} 
+\index{mg\_mgr@{mg\_mgr}!dns4@{dns4}}
+\index{dns4@{dns4}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{dns4}{dns4}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__dns}{mg\+\_\+dns}} mg\+\_\+mgr\+::dns4}
+
+\Hypertarget{structmg__mgr_a746840f07c9c0b48aa55e32c4935c127}\label{structmg__mgr_a746840f07c9c0b48aa55e32c4935c127} 
+\index{mg\_mgr@{mg\_mgr}!dns6@{dns6}}
+\index{dns6@{dns6}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{dns6}{dns6}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__dns}{mg\+\_\+dns}} mg\+\_\+mgr\+::dns6}
+
+\Hypertarget{structmg__mgr_a6fc74db7181a32d78a598fa0d7e2b9d8}\label{structmg__mgr_a6fc74db7181a32d78a598fa0d7e2b9d8} 
+\index{mg\_mgr@{mg\_mgr}!dnstimeout@{dnstimeout}}
+\index{dnstimeout@{dnstimeout}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{dnstimeout}{dnstimeout}}
+{\footnotesize\ttfamily int mg\+\_\+mgr\+::dnstimeout}
+
+\Hypertarget{structmg__mgr_ad4b7250d3c05391b13cc19ed4bdb820c}\label{structmg__mgr_ad4b7250d3c05391b13cc19ed4bdb820c} 
+\index{mg\_mgr@{mg\_mgr}!epoll\_fd@{epoll\_fd}}
+\index{epoll\_fd@{epoll\_fd}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{epoll\_fd}{epoll\_fd}}
+{\footnotesize\ttfamily int mg\+\_\+mgr\+::epoll\+\_\+fd}
+
+\Hypertarget{structmg__mgr_a2acff58c906da8e8e699b3c5cb63dad2}\label{structmg__mgr_a2acff58c906da8e8e699b3c5cb63dad2} 
+\index{mg\_mgr@{mg\_mgr}!extraconnsize@{extraconnsize}}
+\index{extraconnsize@{extraconnsize}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{extraconnsize}{extraconnsize}}
+{\footnotesize\ttfamily size\+\_\+t mg\+\_\+mgr\+::extraconnsize}
+
+\Hypertarget{structmg__mgr_a28f181d31cf9784559fa287e0dd3633d}\label{structmg__mgr_a28f181d31cf9784559fa287e0dd3633d} 
+\index{mg\_mgr@{mg\_mgr}!ifp@{ifp}}
+\index{ifp@{ifp}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{ifp}{ifp}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__tcpip__if}{mg\+\_\+tcpip\+\_\+if}}\texorpdfstring{$\ast$}{*} mg\+\_\+mgr\+::ifp}
+
+\Hypertarget{structmg__mgr_a1b9ebbee6362adf1d6d37016e9942246}\label{structmg__mgr_a1b9ebbee6362adf1d6d37016e9942246} 
+\index{mg\_mgr@{mg\_mgr}!mqtt\_id@{mqtt\_id}}
+\index{mqtt\_id@{mqtt\_id}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{mqtt\_id}{mqtt\_id}}
+{\footnotesize\ttfamily uint16\+\_\+t mg\+\_\+mgr\+::mqtt\+\_\+id}
+
+\Hypertarget{structmg__mgr_a5767d57547d9ca7c653596a56f0b237a}\label{structmg__mgr_a5767d57547d9ca7c653596a56f0b237a} 
+\index{mg\_mgr@{mg\_mgr}!nextid@{nextid}}
+\index{nextid@{nextid}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{nextid}{nextid}}
+{\footnotesize\ttfamily unsigned long mg\+\_\+mgr\+::nextid}
+
+\Hypertarget{structmg__mgr_abf7c323e2b53221bfe447e34393603f0}\label{structmg__mgr_abf7c323e2b53221bfe447e34393603f0} 
+\index{mg\_mgr@{mg\_mgr}!pipe@{pipe}}
+\index{pipe@{pipe}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{pipe}{pipe}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mongoose_8h_a4a24d9816efa3c92abab317163116ea5}{MG\+\_\+\+SOCKET\+\_\+\+TYPE}} mg\+\_\+mgr\+::pipe}
+
+\Hypertarget{structmg__mgr_aff3dd81834d7be66f26c9bd29065fc82}\label{structmg__mgr_aff3dd81834d7be66f26c9bd29065fc82} 
+\index{mg\_mgr@{mg\_mgr}!timerid@{timerid}}
+\index{timerid@{timerid}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{timerid}{timerid}}
+{\footnotesize\ttfamily unsigned long mg\+\_\+mgr\+::timerid}
+
+\Hypertarget{structmg__mgr_adeba7cbcb7d4d59e1ebf5922e7e15a20}\label{structmg__mgr_adeba7cbcb7d4d59e1ebf5922e7e15a20} 
+\index{mg\_mgr@{mg\_mgr}!timers@{timers}}
+\index{timers@{timers}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{timers}{timers}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__timer}{mg\+\_\+timer}}\texorpdfstring{$\ast$}{*} mg\+\_\+mgr\+::timers}
+
+\Hypertarget{structmg__mgr_af06fbb0aecc42c741c53bbb54209f3a0}\label{structmg__mgr_af06fbb0aecc42c741c53bbb54209f3a0} 
+\index{mg\_mgr@{mg\_mgr}!tls\_ctx@{tls\_ctx}}
+\index{tls\_ctx@{tls\_ctx}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{tls\_ctx}{tls\_ctx}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} mg\+\_\+mgr\+::tls\+\_\+ctx}
+
+\Hypertarget{structmg__mgr_a85ffa7ee2ab4325250d983fb0fcd1bd5}\label{structmg__mgr_a85ffa7ee2ab4325250d983fb0fcd1bd5} 
+\index{mg\_mgr@{mg\_mgr}!use\_dns6@{use\_dns6}}
+\index{use\_dns6@{use\_dns6}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{use\_dns6}{use\_dns6}}
+{\footnotesize\ttfamily bool mg\+\_\+mgr\+::use\+\_\+dns6}
+
+\Hypertarget{structmg__mgr_afcb027058e971d541651d6efd9a69a2b}\label{structmg__mgr_afcb027058e971d541651d6efd9a69a2b} 
+\index{mg\_mgr@{mg\_mgr}!userdata@{userdata}}
+\index{userdata@{userdata}!mg\_mgr@{mg\_mgr}}
+\doxysubsubsection{\texorpdfstring{userdata}{userdata}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} mg\+\_\+mgr\+::userdata}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+mongoose/\mbox{\hyperlink{mongoose_8h}{mongoose.\+h}}\end{DoxyCompactItemize}

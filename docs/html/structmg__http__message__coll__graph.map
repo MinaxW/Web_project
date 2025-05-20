@@ -1,0 +1,8 @@
+<map id="mg_http_message" name="mg_http_message">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,229,148,255"/>
+<area shape="rect" id="Node000002" href="$structmg__str.html" title=" " alt="" coords="43,5,110,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,45,70,108,70,167,77,229,72,229,65,167,65,108,71,44"/>
+<area shape="rect" id="Node000003" href="$structmg__http__header.html" title=" " alt="" coords="139,125,267,150"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="101,38,193,122,189,126,97,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,161,93,231,89,227,177,157"/>
+</map>

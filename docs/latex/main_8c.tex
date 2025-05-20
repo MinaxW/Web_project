@@ -1,0 +1,141 @@
+\doxysection{main.\+c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include "{}./mongoose/mongoose.\+h"{}}\newline
+{\ttfamily \#include "{}./input/input.\+h"{}}\newline
+{\ttfamily \#include "{}./constants/constants.\+h"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{main_8c_a06fc87d81c62e9abb8790b6e5713c55baa26c163b80b1f6786ca81dadc14b00fb}{ERR\+\_\+\+OK}} = 0
+, \mbox{\hyperlink{main_8c_a06fc87d81c62e9abb8790b6e5713c55ba0272e22fd73b8056c69f2dafba0dd3f8}{ERR\+\_\+\+MISSING\+\_\+\+ENV}} = 1
+, \mbox{\hyperlink{main_8c_a06fc87d81c62e9abb8790b6e5713c55bac4020ad75c0e26097ccbac3495b83edf}{ERR\+\_\+\+INVALID\+\_\+\+CREDENTIALS}} = 2
+, \mbox{\hyperlink{main_8c_a06fc87d81c62e9abb8790b6e5713c55ba3202ff96dcd656bc62c42234e5a4a6f7}{ERR\+\_\+\+FILE\+\_\+\+NOT\+\_\+\+FOUND}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Перечисляет возможные коды ошибок. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct tm \mbox{\hyperlink{main_8c_a053c7c104a8e13cad0124b9a14dd21bf}{calculate\+\_\+sleep\+\_\+time}} (const char \texorpdfstring{$\ast$}{*}sleep\+\_\+time, const char \texorpdfstring{$\ast$}{*}wake\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Рассчитывает продолжительность сна исходя из времени засыпания и пробуждения. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{main_8c_aa7e48b9f8b32b8451d5df1d9f921308f}{process\+\_\+request}} (struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}} \texorpdfstring{$\ast$}{*}c, struct \mbox{\hyperlink{structmg__http__message}{mg\+\_\+http\+\_\+message}} \texorpdfstring{$\ast$}{*}hm)
+\begin{DoxyCompactList}\small\item\em Обрабатывает входящие HTTP-\/запросы и формирует ответ. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{main_8c_a60c98753d504a1b5eec6bc4aa65e3c52}{main\+\_\+fun}} (struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}} \texorpdfstring{$\ast$}{*}c, int ev, void \texorpdfstring{$\ast$}{*}ev\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Главная функция обработки событий сервера. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em Основная точка входа приложения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{main_8c_a06fc87d81c62e9abb8790b6e5713c55b}\label{main_8c_a06fc87d81c62e9abb8790b6e5713c55b} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+
+
+Перечисляет возможные коды ошибок. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_OK@{ERR\_OK}!main.c@{main.c}}\index{main.c@{main.c}!ERR\_OK@{ERR\_OK}}}\Hypertarget{main_8c_a06fc87d81c62e9abb8790b6e5713c55baa26c163b80b1f6786ca81dadc14b00fb}\label{main_8c_a06fc87d81c62e9abb8790b6e5713c55baa26c163b80b1f6786ca81dadc14b00fb} 
+ERR\+\_\+\+OK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_MISSING\_ENV@{ERR\_MISSING\_ENV}!main.c@{main.c}}\index{main.c@{main.c}!ERR\_MISSING\_ENV@{ERR\_MISSING\_ENV}}}\Hypertarget{main_8c_a06fc87d81c62e9abb8790b6e5713c55ba0272e22fd73b8056c69f2dafba0dd3f8}\label{main_8c_a06fc87d81c62e9abb8790b6e5713c55ba0272e22fd73b8056c69f2dafba0dd3f8} 
+ERR\+\_\+\+MISSING\+\_\+\+ENV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_INVALID\_CREDENTIALS@{ERR\_INVALID\_CREDENTIALS}!main.c@{main.c}}\index{main.c@{main.c}!ERR\_INVALID\_CREDENTIALS@{ERR\_INVALID\_CREDENTIALS}}}\Hypertarget{main_8c_a06fc87d81c62e9abb8790b6e5713c55bac4020ad75c0e26097ccbac3495b83edf}\label{main_8c_a06fc87d81c62e9abb8790b6e5713c55bac4020ad75c0e26097ccbac3495b83edf} 
+ERR\+\_\+\+INVALID\+\_\+\+CREDENTIALS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_FILE\_NOT\_FOUND@{ERR\_FILE\_NOT\_FOUND}!main.c@{main.c}}\index{main.c@{main.c}!ERR\_FILE\_NOT\_FOUND@{ERR\_FILE\_NOT\_FOUND}}}\Hypertarget{main_8c_a06fc87d81c62e9abb8790b6e5713c55ba3202ff96dcd656bc62c42234e5a4a6f7}\label{main_8c_a06fc87d81c62e9abb8790b6e5713c55ba3202ff96dcd656bc62c42234e5a4a6f7} 
+ERR\+\_\+\+FILE\+\_\+\+NOT\+\_\+\+FOUND&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a053c7c104a8e13cad0124b9a14dd21bf}\label{main_8c_a053c7c104a8e13cad0124b9a14dd21bf} 
+\index{main.c@{main.c}!calculate\_sleep\_time@{calculate\_sleep\_time}}
+\index{calculate\_sleep\_time@{calculate\_sleep\_time}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{calculate\_sleep\_time()}{calculate\_sleep\_time()}}
+{\footnotesize\ttfamily struct tm calculate\+\_\+sleep\+\_\+time (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{sleep\+\_\+time,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{wake\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Рассчитывает продолжительность сна исходя из времени засыпания и пробуждения. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sleep\+\_\+time} & Время отхода ко сну (формат "{}часы\+:минуты"{}). \\
+\hline
+{\em wake\+\_\+time} & Время пробуждения (формат "{}часы\+:минуты"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Структура tm с рассчитанным временем сна (час/минуты). Возвращается нулевое значение в случае ошибки. 
+\end{DoxyReturn}
+\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Основная точка входа приложения. 
+
+\begin{DoxyReturn}{Returns}
+0 при нормальном завершении работы. 
+\end{DoxyReturn}
+\Hypertarget{main_8c_a60c98753d504a1b5eec6bc4aa65e3c52}\label{main_8c_a60c98753d504a1b5eec6bc4aa65e3c52} 
+\index{main.c@{main.c}!main\_fun@{main\_fun}}
+\index{main\_fun@{main\_fun}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main\_fun()}{main\_fun()}}
+{\footnotesize\ttfamily static void main\+\_\+fun (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}} \texorpdfstring{$\ast$}{*}}]{c,  }\item[{int}]{ev,  }\item[{void \texorpdfstring{$\ast$}{*}}]{ev\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Главная функция обработки событий сервера. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Соединение Mongoose. \\
+\hline
+{\em ev} & Код события. \\
+\hline
+{\em ev\+\_\+data} & Данные события. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8c_aa7e48b9f8b32b8451d5df1d9f921308f}\label{main_8c_aa7e48b9f8b32b8451d5df1d9f921308f} 
+\index{main.c@{main.c}!process\_request@{process\_request}}
+\index{process\_request@{process\_request}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{process\_request()}{process\_request()}}
+{\footnotesize\ttfamily static int process\+\_\+request (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}} \texorpdfstring{$\ast$}{*}}]{c,  }\item[{struct \mbox{\hyperlink{structmg__http__message}{mg\+\_\+http\+\_\+message}} \texorpdfstring{$\ast$}{*}}]{hm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Обрабатывает входящие HTTP-\/запросы и формирует ответ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Соединение Mongoose. \\
+\hline
+{\em hm} & Сообщение HTTP-\/запроса. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Целое число, обозначающее код ошибки\+: ERR\+\_\+\+OK при успехе, иначе другой код ошибки. 
+\end{DoxyReturn}

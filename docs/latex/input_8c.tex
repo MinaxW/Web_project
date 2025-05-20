@@ -1,0 +1,38 @@
+\doxysection{input/input.c File Reference}
+\hypertarget{input_8c}{}\label{input_8c}\index{input/input.c@{input/input.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}input.\+h"{}}\newline
+Include dependency graph for input.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{input_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{input_8c_ab5e8b6289c8d0f065872cbe531443692}{read\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Чтение всего содержимого указанного файла. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{input_8c_ab5e8b6289c8d0f065872cbe531443692}\label{input_8c_ab5e8b6289c8d0f065872cbe531443692} 
+\index{input.c@{input.c}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} read\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+
+
+Чтение всего содержимого указанного файла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Имя файла для чтения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на буфер с содержимым файла (заканчивающийся символом \textquotesingle{}\textbackslash{}0\textquotesingle{}) или NULL в случае ошибки. 
+\end{DoxyReturn}
