@@ -1,0 +1,97 @@
+\doxysection{mg\+\_\+fs Struct Reference}
+\hypertarget{structmg__fs}{}\label{structmg__fs}\index{mg\_fs@{mg\_fs}}
+
+
+{\ttfamily \#include $<$mongoose.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_acef078be216a94b0b64ce4858a5d617d}{st}} )(const char \texorpdfstring{$\ast$}{*}path, size\+\_\+t \texorpdfstring{$\ast$}{*}size, time\+\_\+t \texorpdfstring{$\ast$}{*}mtime)
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_ac1e13d44a61f2084b3ff91721c853084}{ls}} )(const char \texorpdfstring{$\ast$}{*}path, void(\texorpdfstring{$\ast$}{*}fn)(const char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}), void \texorpdfstring{$\ast$}{*})
+\item 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_adf332c3883b7c58638abdbceca052a09}{op}} )(const char \texorpdfstring{$\ast$}{*}path, int flags)
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_ad201829b0e7912e55701f6d11ac75f13}{cl}} )(void \texorpdfstring{$\ast$}{*}fd)
+\item 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_a2eaea2587bbd76629986d5d54908504d}{rd}} )(void \texorpdfstring{$\ast$}{*}fd, void \texorpdfstring{$\ast$}{*}buf, size\+\_\+t len)
+\item 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_a8f11bdd590377a733eaf4f992be12cd3}{wr}} )(void \texorpdfstring{$\ast$}{*}fd, const void \texorpdfstring{$\ast$}{*}buf, size\+\_\+t len)
+\item 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_ae3b3b01e47b5b3675f2aa1ec40629fb2}{sk}} )(void \texorpdfstring{$\ast$}{*}fd, size\+\_\+t offset)
+\item 
+bool(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_ae95a408fa2149d8768d507a04e329e52}{mv}} )(const char \texorpdfstring{$\ast$}{*}from, const char \texorpdfstring{$\ast$}{*}to)
+\item 
+bool(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_a94cd2111f5890709418a40bb744ea12b}{rm}} )(const char \texorpdfstring{$\ast$}{*}path)
+\item 
+bool(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__fs_a7cd1db459a25d238f473c0b6db9bc354}{mkd}} )(const char \texorpdfstring{$\ast$}{*}path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structmg__fs_ad201829b0e7912e55701f6d11ac75f13}\label{structmg__fs_ad201829b0e7912e55701f6d11ac75f13} 
+\index{mg\_fs@{mg\_fs}!cl@{cl}}
+\index{cl@{cl}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{cl}{cl}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::cl) (void \texorpdfstring{$\ast$}{*}fd)}
+
+\Hypertarget{structmg__fs_ac1e13d44a61f2084b3ff91721c853084}\label{structmg__fs_ac1e13d44a61f2084b3ff91721c853084} 
+\index{mg\_fs@{mg\_fs}!ls@{ls}}
+\index{ls@{ls}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{ls}{ls}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::ls) (const char \texorpdfstring{$\ast$}{*}path, void(\texorpdfstring{$\ast$}{*}fn)(const char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}), void \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{structmg__fs_a7cd1db459a25d238f473c0b6db9bc354}\label{structmg__fs_a7cd1db459a25d238f473c0b6db9bc354} 
+\index{mg\_fs@{mg\_fs}!mkd@{mkd}}
+\index{mkd@{mkd}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{mkd}{mkd}}
+{\footnotesize\ttfamily bool(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::mkd) (const char \texorpdfstring{$\ast$}{*}path)}
+
+\Hypertarget{structmg__fs_ae95a408fa2149d8768d507a04e329e52}\label{structmg__fs_ae95a408fa2149d8768d507a04e329e52} 
+\index{mg\_fs@{mg\_fs}!mv@{mv}}
+\index{mv@{mv}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{mv}{mv}}
+{\footnotesize\ttfamily bool(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::mv) (const char \texorpdfstring{$\ast$}{*}from, const char \texorpdfstring{$\ast$}{*}to)}
+
+\Hypertarget{structmg__fs_adf332c3883b7c58638abdbceca052a09}\label{structmg__fs_adf332c3883b7c58638abdbceca052a09} 
+\index{mg\_fs@{mg\_fs}!op@{op}}
+\index{op@{op}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{op}{op}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::op) (const char \texorpdfstring{$\ast$}{*}path, int flags)}
+
+\Hypertarget{structmg__fs_a2eaea2587bbd76629986d5d54908504d}\label{structmg__fs_a2eaea2587bbd76629986d5d54908504d} 
+\index{mg\_fs@{mg\_fs}!rd@{rd}}
+\index{rd@{rd}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{rd}{rd}}
+{\footnotesize\ttfamily size\+\_\+t(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::rd) (void \texorpdfstring{$\ast$}{*}fd, void \texorpdfstring{$\ast$}{*}buf, size\+\_\+t len)}
+
+\Hypertarget{structmg__fs_a94cd2111f5890709418a40bb744ea12b}\label{structmg__fs_a94cd2111f5890709418a40bb744ea12b} 
+\index{mg\_fs@{mg\_fs}!rm@{rm}}
+\index{rm@{rm}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{rm}{rm}}
+{\footnotesize\ttfamily bool(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::rm) (const char \texorpdfstring{$\ast$}{*}path)}
+
+\Hypertarget{structmg__fs_ae3b3b01e47b5b3675f2aa1ec40629fb2}\label{structmg__fs_ae3b3b01e47b5b3675f2aa1ec40629fb2} 
+\index{mg\_fs@{mg\_fs}!sk@{sk}}
+\index{sk@{sk}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{sk}{sk}}
+{\footnotesize\ttfamily size\+\_\+t(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::sk) (void \texorpdfstring{$\ast$}{*}fd, size\+\_\+t offset)}
+
+\Hypertarget{structmg__fs_acef078be216a94b0b64ce4858a5d617d}\label{structmg__fs_acef078be216a94b0b64ce4858a5d617d} 
+\index{mg\_fs@{mg\_fs}!st@{st}}
+\index{st@{st}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{st}{st}}
+{\footnotesize\ttfamily int(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::st) (const char \texorpdfstring{$\ast$}{*}path, size\+\_\+t \texorpdfstring{$\ast$}{*}size, time\+\_\+t \texorpdfstring{$\ast$}{*}mtime)}
+
+\Hypertarget{structmg__fs_a8f11bdd590377a733eaf4f992be12cd3}\label{structmg__fs_a8f11bdd590377a733eaf4f992be12cd3} 
+\index{mg\_fs@{mg\_fs}!wr@{wr}}
+\index{wr@{wr}!mg\_fs@{mg\_fs}}
+\doxysubsubsection{\texorpdfstring{wr}{wr}}
+{\footnotesize\ttfamily size\+\_\+t(\texorpdfstring{$\ast$}{*} mg\+\_\+fs\+::wr) (void \texorpdfstring{$\ast$}{*}fd, const void \texorpdfstring{$\ast$}{*}buf, size\+\_\+t len)}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+mongoose/\mbox{\hyperlink{mongoose_8h}{mongoose.\+h}}\end{DoxyCompactItemize}

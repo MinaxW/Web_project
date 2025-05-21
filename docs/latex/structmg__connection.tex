@@ -1,0 +1,306 @@
+\doxysection{mg\+\_\+connection Struct Reference}
+\hypertarget{structmg__connection}{}\label{structmg__connection}\index{mg\_connection@{mg\_connection}}
+
+
+{\ttfamily \#include $<$mongoose.\+h$>$}
+
+
+
+Collaboration diagram for mg\+\_\+connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmg__connection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__connection_afcfd89f119a87cba6f6dfec2d2eda5d9}{next}}
+\item 
+struct \mbox{\hyperlink{structmg__mgr}{mg\+\_\+mgr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__connection_ac341f1f2bd18e030fe90a914e4517506}{mgr}}
+\item 
+struct \mbox{\hyperlink{structmg__addr}{mg\+\_\+addr}} \mbox{\hyperlink{structmg__connection_a92ff4282f9b40102b88be052944daaaa}{loc}}
+\item 
+struct \mbox{\hyperlink{structmg__addr}{mg\+\_\+addr}} \mbox{\hyperlink{structmg__connection_af87a0c5193d29f2c34036549065cecd2}{rem}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__connection_ad9e987f009c889d868f93c04016316e2}{fd}}
+\item 
+unsigned long \mbox{\hyperlink{structmg__connection_a893cc7fcb6c096ada2456a998f874459}{id}}
+\item 
+struct \mbox{\hyperlink{structmg__iobuf}{mg\+\_\+iobuf}} \mbox{\hyperlink{structmg__connection_a629f3bc6d561bcee9ee4b46069812cd5}{recv}}
+\item 
+struct \mbox{\hyperlink{structmg__iobuf}{mg\+\_\+iobuf}} \mbox{\hyperlink{structmg__connection_a8e48bb473bd7554101dacf968b487721}{send}}
+\item 
+struct \mbox{\hyperlink{structmg__iobuf}{mg\+\_\+iobuf}} \mbox{\hyperlink{structmg__connection_ab19ee99a9ea1fc3a9f93bad603d9c42e}{prof}}
+\item 
+struct \mbox{\hyperlink{structmg__iobuf}{mg\+\_\+iobuf}} \mbox{\hyperlink{structmg__connection_ad8ba006f0848b9b749542d322275f1cb}{rtls}}
+\item 
+\mbox{\hyperlink{mongoose_8h_a8dd1e52f876c343483132a85e34ba8dd}{mg\+\_\+event\+\_\+handler\+\_\+t}} \mbox{\hyperlink{structmg__connection_a827b90c2c78ed64e27f47fb99f7c7ea1}{fn}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__connection_a0d91f11e3ed034a5b49bd287b0c38b5d}{fn\+\_\+data}}
+\item 
+\mbox{\hyperlink{mongoose_8h_a8dd1e52f876c343483132a85e34ba8dd}{mg\+\_\+event\+\_\+handler\+\_\+t}} \mbox{\hyperlink{structmg__connection_a57f59197e916473cd4c53ce25fae7d14}{pfn}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__connection_a33ded7ed00e3afcae6b7a32f43e0b2de}{pfn\+\_\+data}}
+\item 
+char \mbox{\hyperlink{structmg__connection_a02468d62a7b840370d0bb3a6ccd0469d}{data}} \mbox{[}\mbox{\hyperlink{mongoose_8h_aea9af88047ab1999aca99c788ce4705b}{MG\+\_\+\+DATA\+\_\+\+SIZE}}\mbox{]}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmg__connection_a363df413e01204afe250a342ef0484a8}{tls}}
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a5199c57023a6a2dcfcc63ff83e7e1632}{is\+\_\+listening}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_ae37d375bb40052a4c57fd719cce8adf9}{is\+\_\+client}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_abf097fe58b7e31e1c88883d11fabbb75}{is\+\_\+accepted}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a0c519c99e8067f4d49349836473d9886}{is\+\_\+resolving}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a2e95b27c81b011b48efe7c770ea2a0af}{is\+\_\+arplooking}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a3949f95bd5dda4ba3e646ee4c3b35582}{is\+\_\+connecting}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a2bd209eaaaec7bd4a6a76c9f59c38419}{is\+\_\+tls}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a753d323b01ed269677833e9cf47e031f}{is\+\_\+tls\+\_\+hs}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_ac445f40accf9a7babca2a56734d31c48}{is\+\_\+udp}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_ae52c1dd47c0361e095fe30832c290c36}{is\+\_\+websocket}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a73b3f0a688c9ceadaf57dc633fa509df}{is\+\_\+mqtt5}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a5abc3948edf68939626a82067d81ca4d}{is\+\_\+hexdumping}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a7568c686f4c35aea664435e6e27db2a8}{is\+\_\+draining}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_ab571bca88c124a1c9d88a49cbb9faf16}{is\+\_\+closing}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_ad054326090c9642139534aa279f5f3a3}{is\+\_\+full}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a76e13edfdebeec81b298f2d6ad576998}{is\+\_\+tls\+\_\+throttled}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_a3ce304b99810e088175a73c45ac178c7}{is\+\_\+resp}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_ac83238d4588afb57777cf051b297ea21}{is\+\_\+readable}}\+: 1
+\item 
+unsigned \mbox{\hyperlink{structmg__connection_abe61151a72c10dddb3a2bd338ace5f62}{is\+\_\+writable}}\+: 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structmg__connection_a02468d62a7b840370d0bb3a6ccd0469d}\label{structmg__connection_a02468d62a7b840370d0bb3a6ccd0469d} 
+\index{mg\_connection@{mg\_connection}!data@{data}}
+\index{data@{data}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily char mg\+\_\+connection\+::data\mbox{[}\mbox{\hyperlink{mongoose_8h_aea9af88047ab1999aca99c788ce4705b}{MG\+\_\+\+DATA\+\_\+\+SIZE}}\mbox{]}}
+
+\Hypertarget{structmg__connection_ad9e987f009c889d868f93c04016316e2}\label{structmg__connection_ad9e987f009c889d868f93c04016316e2} 
+\index{mg\_connection@{mg\_connection}!fd@{fd}}
+\index{fd@{fd}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{fd}{fd}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} mg\+\_\+connection\+::fd}
+
+\Hypertarget{structmg__connection_a827b90c2c78ed64e27f47fb99f7c7ea1}\label{structmg__connection_a827b90c2c78ed64e27f47fb99f7c7ea1} 
+\index{mg\_connection@{mg\_connection}!fn@{fn}}
+\index{fn@{fn}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mongoose_8h_a8dd1e52f876c343483132a85e34ba8dd}{mg\+\_\+event\+\_\+handler\+\_\+t}} mg\+\_\+connection\+::fn}
+
+\Hypertarget{structmg__connection_a0d91f11e3ed034a5b49bd287b0c38b5d}\label{structmg__connection_a0d91f11e3ed034a5b49bd287b0c38b5d} 
+\index{mg\_connection@{mg\_connection}!fn\_data@{fn\_data}}
+\index{fn\_data@{fn\_data}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{fn\_data}{fn\_data}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} mg\+\_\+connection\+::fn\+\_\+data}
+
+\Hypertarget{structmg__connection_a893cc7fcb6c096ada2456a998f874459}\label{structmg__connection_a893cc7fcb6c096ada2456a998f874459} 
+\index{mg\_connection@{mg\_connection}!id@{id}}
+\index{id@{id}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily unsigned long mg\+\_\+connection\+::id}
+
+\Hypertarget{structmg__connection_abf097fe58b7e31e1c88883d11fabbb75}\label{structmg__connection_abf097fe58b7e31e1c88883d11fabbb75} 
+\index{mg\_connection@{mg\_connection}!is\_accepted@{is\_accepted}}
+\index{is\_accepted@{is\_accepted}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_accepted}{is\_accepted}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+accepted}
+
+\Hypertarget{structmg__connection_a2e95b27c81b011b48efe7c770ea2a0af}\label{structmg__connection_a2e95b27c81b011b48efe7c770ea2a0af} 
+\index{mg\_connection@{mg\_connection}!is\_arplooking@{is\_arplooking}}
+\index{is\_arplooking@{is\_arplooking}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_arplooking}{is\_arplooking}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+arplooking}
+
+\Hypertarget{structmg__connection_ae37d375bb40052a4c57fd719cce8adf9}\label{structmg__connection_ae37d375bb40052a4c57fd719cce8adf9} 
+\index{mg\_connection@{mg\_connection}!is\_client@{is\_client}}
+\index{is\_client@{is\_client}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_client}{is\_client}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+client}
+
+\Hypertarget{structmg__connection_ab571bca88c124a1c9d88a49cbb9faf16}\label{structmg__connection_ab571bca88c124a1c9d88a49cbb9faf16} 
+\index{mg\_connection@{mg\_connection}!is\_closing@{is\_closing}}
+\index{is\_closing@{is\_closing}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_closing}{is\_closing}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+closing}
+
+\Hypertarget{structmg__connection_a3949f95bd5dda4ba3e646ee4c3b35582}\label{structmg__connection_a3949f95bd5dda4ba3e646ee4c3b35582} 
+\index{mg\_connection@{mg\_connection}!is\_connecting@{is\_connecting}}
+\index{is\_connecting@{is\_connecting}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_connecting}{is\_connecting}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+connecting}
+
+\Hypertarget{structmg__connection_a7568c686f4c35aea664435e6e27db2a8}\label{structmg__connection_a7568c686f4c35aea664435e6e27db2a8} 
+\index{mg\_connection@{mg\_connection}!is\_draining@{is\_draining}}
+\index{is\_draining@{is\_draining}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_draining}{is\_draining}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+draining}
+
+\Hypertarget{structmg__connection_ad054326090c9642139534aa279f5f3a3}\label{structmg__connection_ad054326090c9642139534aa279f5f3a3} 
+\index{mg\_connection@{mg\_connection}!is\_full@{is\_full}}
+\index{is\_full@{is\_full}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_full}{is\_full}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+full}
+
+\Hypertarget{structmg__connection_a5abc3948edf68939626a82067d81ca4d}\label{structmg__connection_a5abc3948edf68939626a82067d81ca4d} 
+\index{mg\_connection@{mg\_connection}!is\_hexdumping@{is\_hexdumping}}
+\index{is\_hexdumping@{is\_hexdumping}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_hexdumping}{is\_hexdumping}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+hexdumping}
+
+\Hypertarget{structmg__connection_a5199c57023a6a2dcfcc63ff83e7e1632}\label{structmg__connection_a5199c57023a6a2dcfcc63ff83e7e1632} 
+\index{mg\_connection@{mg\_connection}!is\_listening@{is\_listening}}
+\index{is\_listening@{is\_listening}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_listening}{is\_listening}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+listening}
+
+\Hypertarget{structmg__connection_a73b3f0a688c9ceadaf57dc633fa509df}\label{structmg__connection_a73b3f0a688c9ceadaf57dc633fa509df} 
+\index{mg\_connection@{mg\_connection}!is\_mqtt5@{is\_mqtt5}}
+\index{is\_mqtt5@{is\_mqtt5}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_mqtt5}{is\_mqtt5}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+mqtt5}
+
+\Hypertarget{structmg__connection_ac83238d4588afb57777cf051b297ea21}\label{structmg__connection_ac83238d4588afb57777cf051b297ea21} 
+\index{mg\_connection@{mg\_connection}!is\_readable@{is\_readable}}
+\index{is\_readable@{is\_readable}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_readable}{is\_readable}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+readable}
+
+\Hypertarget{structmg__connection_a0c519c99e8067f4d49349836473d9886}\label{structmg__connection_a0c519c99e8067f4d49349836473d9886} 
+\index{mg\_connection@{mg\_connection}!is\_resolving@{is\_resolving}}
+\index{is\_resolving@{is\_resolving}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_resolving}{is\_resolving}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+resolving}
+
+\Hypertarget{structmg__connection_a3ce304b99810e088175a73c45ac178c7}\label{structmg__connection_a3ce304b99810e088175a73c45ac178c7} 
+\index{mg\_connection@{mg\_connection}!is\_resp@{is\_resp}}
+\index{is\_resp@{is\_resp}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_resp}{is\_resp}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+resp}
+
+\Hypertarget{structmg__connection_a2bd209eaaaec7bd4a6a76c9f59c38419}\label{structmg__connection_a2bd209eaaaec7bd4a6a76c9f59c38419} 
+\index{mg\_connection@{mg\_connection}!is\_tls@{is\_tls}}
+\index{is\_tls@{is\_tls}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_tls}{is\_tls}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+tls}
+
+\Hypertarget{structmg__connection_a753d323b01ed269677833e9cf47e031f}\label{structmg__connection_a753d323b01ed269677833e9cf47e031f} 
+\index{mg\_connection@{mg\_connection}!is\_tls\_hs@{is\_tls\_hs}}
+\index{is\_tls\_hs@{is\_tls\_hs}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_tls\_hs}{is\_tls\_hs}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+tls\+\_\+hs}
+
+\Hypertarget{structmg__connection_a76e13edfdebeec81b298f2d6ad576998}\label{structmg__connection_a76e13edfdebeec81b298f2d6ad576998} 
+\index{mg\_connection@{mg\_connection}!is\_tls\_throttled@{is\_tls\_throttled}}
+\index{is\_tls\_throttled@{is\_tls\_throttled}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_tls\_throttled}{is\_tls\_throttled}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+tls\+\_\+throttled}
+
+\Hypertarget{structmg__connection_ac445f40accf9a7babca2a56734d31c48}\label{structmg__connection_ac445f40accf9a7babca2a56734d31c48} 
+\index{mg\_connection@{mg\_connection}!is\_udp@{is\_udp}}
+\index{is\_udp@{is\_udp}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_udp}{is\_udp}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+udp}
+
+\Hypertarget{structmg__connection_ae52c1dd47c0361e095fe30832c290c36}\label{structmg__connection_ae52c1dd47c0361e095fe30832c290c36} 
+\index{mg\_connection@{mg\_connection}!is\_websocket@{is\_websocket}}
+\index{is\_websocket@{is\_websocket}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_websocket}{is\_websocket}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+websocket}
+
+\Hypertarget{structmg__connection_abe61151a72c10dddb3a2bd338ace5f62}\label{structmg__connection_abe61151a72c10dddb3a2bd338ace5f62} 
+\index{mg\_connection@{mg\_connection}!is\_writable@{is\_writable}}
+\index{is\_writable@{is\_writable}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{is\_writable}{is\_writable}}
+{\footnotesize\ttfamily unsigned mg\+\_\+connection\+::is\+\_\+writable}
+
+\Hypertarget{structmg__connection_a92ff4282f9b40102b88be052944daaaa}\label{structmg__connection_a92ff4282f9b40102b88be052944daaaa} 
+\index{mg\_connection@{mg\_connection}!loc@{loc}}
+\index{loc@{loc}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{loc}{loc}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__addr}{mg\+\_\+addr}} mg\+\_\+connection\+::loc}
+
+\Hypertarget{structmg__connection_ac341f1f2bd18e030fe90a914e4517506}\label{structmg__connection_ac341f1f2bd18e030fe90a914e4517506} 
+\index{mg\_connection@{mg\_connection}!mgr@{mgr}}
+\index{mgr@{mgr}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{mgr}{mgr}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__mgr}{mg\+\_\+mgr}}\texorpdfstring{$\ast$}{*} mg\+\_\+connection\+::mgr}
+
+\Hypertarget{structmg__connection_afcfd89f119a87cba6f6dfec2d2eda5d9}\label{structmg__connection_afcfd89f119a87cba6f6dfec2d2eda5d9} 
+\index{mg\_connection@{mg\_connection}!next@{next}}
+\index{next@{next}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}}\texorpdfstring{$\ast$}{*} mg\+\_\+connection\+::next}
+
+\Hypertarget{structmg__connection_a57f59197e916473cd4c53ce25fae7d14}\label{structmg__connection_a57f59197e916473cd4c53ce25fae7d14} 
+\index{mg\_connection@{mg\_connection}!pfn@{pfn}}
+\index{pfn@{pfn}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{pfn}{pfn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mongoose_8h_a8dd1e52f876c343483132a85e34ba8dd}{mg\+\_\+event\+\_\+handler\+\_\+t}} mg\+\_\+connection\+::pfn}
+
+\Hypertarget{structmg__connection_a33ded7ed00e3afcae6b7a32f43e0b2de}\label{structmg__connection_a33ded7ed00e3afcae6b7a32f43e0b2de} 
+\index{mg\_connection@{mg\_connection}!pfn\_data@{pfn\_data}}
+\index{pfn\_data@{pfn\_data}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{pfn\_data}{pfn\_data}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} mg\+\_\+connection\+::pfn\+\_\+data}
+
+\Hypertarget{structmg__connection_ab19ee99a9ea1fc3a9f93bad603d9c42e}\label{structmg__connection_ab19ee99a9ea1fc3a9f93bad603d9c42e} 
+\index{mg\_connection@{mg\_connection}!prof@{prof}}
+\index{prof@{prof}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{prof}{prof}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__iobuf}{mg\+\_\+iobuf}} mg\+\_\+connection\+::prof}
+
+\Hypertarget{structmg__connection_a629f3bc6d561bcee9ee4b46069812cd5}\label{structmg__connection_a629f3bc6d561bcee9ee4b46069812cd5} 
+\index{mg\_connection@{mg\_connection}!recv@{recv}}
+\index{recv@{recv}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{recv}{recv}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__iobuf}{mg\+\_\+iobuf}} mg\+\_\+connection\+::recv}
+
+\Hypertarget{structmg__connection_af87a0c5193d29f2c34036549065cecd2}\label{structmg__connection_af87a0c5193d29f2c34036549065cecd2} 
+\index{mg\_connection@{mg\_connection}!rem@{rem}}
+\index{rem@{rem}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{rem}{rem}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__addr}{mg\+\_\+addr}} mg\+\_\+connection\+::rem}
+
+\Hypertarget{structmg__connection_ad8ba006f0848b9b749542d322275f1cb}\label{structmg__connection_ad8ba006f0848b9b749542d322275f1cb} 
+\index{mg\_connection@{mg\_connection}!rtls@{rtls}}
+\index{rtls@{rtls}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{rtls}{rtls}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__iobuf}{mg\+\_\+iobuf}} mg\+\_\+connection\+::rtls}
+
+\Hypertarget{structmg__connection_a8e48bb473bd7554101dacf968b487721}\label{structmg__connection_a8e48bb473bd7554101dacf968b487721} 
+\index{mg\_connection@{mg\_connection}!send@{send}}
+\index{send@{send}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{send}{send}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmg__iobuf}{mg\+\_\+iobuf}} mg\+\_\+connection\+::send}
+
+\Hypertarget{structmg__connection_a363df413e01204afe250a342ef0484a8}\label{structmg__connection_a363df413e01204afe250a342ef0484a8} 
+\index{mg\_connection@{mg\_connection}!tls@{tls}}
+\index{tls@{tls}!mg\_connection@{mg\_connection}}
+\doxysubsubsection{\texorpdfstring{tls}{tls}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} mg\+\_\+connection\+::tls}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+mongoose/\mbox{\hyperlink{mongoose_8h}{mongoose.\+h}}\end{DoxyCompactItemize}
