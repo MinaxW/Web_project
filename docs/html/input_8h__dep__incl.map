@@ -1,7 +1,0 @@
-<map id="input/input.h" name="input/input.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="59,5,163,31"/>
-<area shape="rect" id="Node000002" href="$input_8c.html" title=" " alt="" coords="5,79,108,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,43,68,80,63,77,92,40"/>
-<area shape="rect" id="Node000003" href="$main_8c.html" title=" " alt="" coords="133,79,199,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,40,159,77,155,80,127,43"/>
-</map>
