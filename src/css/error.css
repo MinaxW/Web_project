@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #781bbf, #be00ed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.message {
+    padding: 1.7rem 2.1rem;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    max-width: 400px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.message-error {
+    background-color: #fcebea;
+    color: #b91c1c;
+    border: 1px solid #f5c2c0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
